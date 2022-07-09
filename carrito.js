@@ -30,7 +30,6 @@ const fetchData = async () => {
     try {
         const res = await fetch('data.json');
         const data = await res.json();
-        // console.log(data)
         pintarCards(data)
     } catch (error) {
         console.log(error);
@@ -56,8 +55,7 @@ const pintarCards = data => {
 };
 
 const addCarrito = e => {
-    // console.log(e.target);
-    // console.log(e.target.classList.contains('btn-dark'));
+
     if (e.target.classList.contains('btn-dark')) {
 
         setCarrito(e.target.parentElement);
@@ -68,7 +66,7 @@ const addCarrito = e => {
 };
 
 const setCarrito = objeto => {
-    // console.log(objeto);
+
     const servicio = {
         id: objeto.querySelector('.btn-dark').dataset.id,
         titulo: objeto.querySelector('h5').textContent,
@@ -89,7 +87,7 @@ const setCarrito = objeto => {
 };
 
 const pintarCarrito = () => {
-    // console.log(carrito)
+
     items.innerHTML = ""
     Object.values(carrito).forEach(servicio => {
         templateCarrito.querySelector('th').textContent = servicio.id
@@ -141,11 +139,10 @@ const pintarFooter = () => {
 }
 
 const btnAccion = e => {
-    // console.log(e.target)
+
     // Acción de aumentar
     if (e.target.classList.contains('btn-info')) {
-        // console.log(carrito[e.target.dataset.id])
-        // carrito[e.target.dataset.id]
+
         const servicio = carrito[e.target.dataset.id]
         servicio.cantidad++
         carrito[e.target.dataset.id] = {
@@ -153,7 +150,7 @@ const btnAccion = e => {
         }
         pintarCarrito()
     }
-
+    // Acción de disminuir
     if (e.target.classList.contains('btn-danger')) {
         const servicio = carrito[e.target.dataset.id]
         servicio.cantidad--
@@ -165,6 +162,8 @@ const btnAccion = e => {
 
     e.stopPropagation()
 }
+
+// Notificación 
 
 const agregarNotificacion = (mensaje, duracion) => {
 
@@ -178,4 +177,3 @@ const agregarNotificacion = (mensaje, duracion) => {
     }).showToast();
 
 }
-
