@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="CopoFloripa tiene como principal servicio ofrecer un Turismo-Personalizado, es decir que se adecúa a las necesidades de cada persona">
+  <meta name="keywords"
+    content="Viajes, turismo, turismo personalizado, vacaciones, isla, mar, playa, isla de la mágia, relax, descanso">
+  <meta name="author" content="Fernando Mazzucco">
+  <meta name="copyright" content="FerMazz">
+  <script src="https://kit.fontawesome.com/116473793d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>CopoFloripa</title>
+
+</head>
+
+<body>
+
+  <!--Fila logo y nav-->
+  <div class="back">
+    <header class="header1">
+      <nav class="navbar flex-row container">
+        <a class="navbar__brand" href="index.html"> <img class="navbar__brand--img"
+            src="./assets/images/LogoPalmeraBlanca.png" alt="Logo de la empresa CopoFloripa"></a>
+        <ul class="navbar__menu flex-row" id="borderwhit">
+          <li class="navbar__item">
+            <a class="navbar__link1" href="index.html">INICIO</a>
+          </li>
+          <li class="navbar__item border2">
+            <a class="navbar__link1" href="index.html#sobre">SOBRE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link1" href="index.html#carrito">SERVICIOS</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link1" href="assets/pages/galeria.html">CONTACTO</a>
+          </li>
+          <li class="navbar__item">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" id="myModal" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Login
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="body-form">
+                      <div class="container-form">
+                        <div class="title-form">
+                          <h2> Crear cuenta</h2>
+                        </div>
+                        <!-- Inicio formulario -->
+                        <form id="form" class="form">
+                          <div class="form-control">
+                            <label for="username">Nombre de usuario</label>
+                            <input type="text" id="username" placeholder="Digite su nombre de usuario"></input>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensaje de error</small>
+                          </div>
+                          <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Digite su email"></input>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensaje de error</small>
+                          </div>
+                          <div class="form-control">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" placeholder="Digite su contraseña"></input>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensaje de error</small>
+                          </div>
+                          <div class="form-control">
+                            <label for="password-confirmation">Confirmar contraseña</label>
+                            <input type="password" id="password-confirmation"
+                              placeholder="Digite su contraseña nuevamente"></input>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensaje de error</small>
+                          </div>
+                          <button type="submit">Enviar</button>
+                        </form>
+                        <!-- Fin formulario -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Cierre fila logo y nav-->
+
+    <!--Información del sitio-->
+
+    <section class="tittle__empresa">
+      <h1 class="tittle">Copo Floripa</h1>
+    </section>
+  </div>
+
+  <main class="mainserv">
+
+    <!-- Sección sobre nosotros  -->
+
+    <section class="sobre container flex-row" id="sobre">
+      <picture class="sobre__picture">
+        <img class="sobre__img" src="./assets/images/5.Playa.jpg" alt="Foto de playa">
+      </picture>
+      <div class="sobre__text">
+        <div class="sobre__text__1">
+          <h2 class="sobre__tittle"> Turismo de Viaje Personalizado</h2>
+          <p class="sobre__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi
+            perspiciatis fugit
+            explicabo
+            nihil quos sapiente ex ullam nam magnam natus, neque magni, sed necessitatibus mollitia blanditiis
+            sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet officia possimus
+            laborum.
+          </p>
+        </div>
+        <br>
+        <div class="sobre__text__1">
+          <h2 class="sobre__tittle">Como Funciona el Turismo Personalizado</h2>
+          <p class="sobre__info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequatur rem
+            fugit architecto, quas esse
+            assumenda voluptas facilis unde rerum et aliquam ducimus quibusdam eveniet iusto veritatis libero.
+            Soluta, neque. Lorem ipsum, consectetur adipisicing elit. Amet officia possimus
+            laborum.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fin sección sobre nosotros -->
+
+    <!-- Inicio Sección Carrito -->
+
+    <div class="container-sm" id="carrito">
+      <br><br><br>
+      <h2>Comience a comprar sus paquetes de excursiones!</h2>
+      <hr>
+
+      <template id="template-card">
+        <div class="col-lg-4 mb-4 align-items-stretch">
+          <div class="card h-100">
+            <img src="" alt="" class="card-img-top" style="width: auto; height: 400px;">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark btn-comprar" id="myBtn">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </template>
+      
+
+    <template class="template-carrito" id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Clases de Surf</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm">
+            +
+          </button>
+          <button class="btn btn-danger btn-sm">
+            -
+          </button>
+        </td>
+        <td>US$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <table class="table">
+      <thead>
+        <tr class="table_tittle">
+          <th scope="col">#</th>
+          <th scope="col">Actividad / Excursión</th>
+          <th scope="col">Horas</th>
+          <th scope="col">Acción</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody id="items"></tbody>
+      <tfoot>
+        <tr id="footer">
+          <th scope="row" colspan="5">El carrito está vacío</th>
+          <div id="vacio"></div>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="row" id="cards"></div>
+  </div>
+
+  <template id="template-footer">
+    <th scope="row" colspan="2">Total servicios</th>
+    <td>10</td>
+    <td>
+      <button class="btn btn-danger btn-sm borrar-todo" id="vaciar-carrito">
+        Borrar todo
+      </button>
+    </td>
+    <td class="font-weight-bold">US$ <span>5000</span></td>
+    <br><br>
+  </template>
+  
+
+    <!-- Fin sección Carrito -->
+
+  </main>
+
+  <!-- Inicio Footer  -->
+
+  <div class="my-5">
+    <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+      <div class="container p-4 pb-0">
+        <section class="">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Copo Floripa
+              </h6>
+              <p class="footer_info">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed consequatur rem fugit architecto, quas
+                esse assumenda voluptas facilis unde rerum et aliquam ducimus quibusdam eveniet iusto veritatis libero.
+              </p>
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+              <p>
+                <a class="text-white">Hotelería</a>
+              </p>
+              <p>
+                <a class="text-white">Excursiones</a>
+              </p>
+              <p>
+                <a class="text-white">Translados</a>
+              </p>
+              <p>
+                <a class="text-white">Personalizado</a>
+              </p>
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+              <p><i class="fas fa-home mr-3"></i> Av. Las Rendeiras, Forianópolis, SC</p>
+              <p><i class="fas fa-envelope mr-3" ></i> copofloripa@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Seguinos</h6>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+              <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="text-center p-3 copyright" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Copofloripa.com</a>
+      </div>
+    </footer>
+  </div>
+  <!-- Fin Footer -->
+
+  <!-- Inicio sección scritps -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- <script src="scriptadm.js"></script> -->
+  <script src="scriptcliente.js"></script>
+  <!-- <script src="clima.js"></script> -->
+  <script src="formulario.js"></script>
+  <script src="carrito.js"></script>
+  <script src="https://kit.fontawesome.com/116473793d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Fin sección scripts -->
+
+</body>
+
+</html>

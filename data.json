@@ -1,0 +1,40 @@
+
+ [
+
+    {
+        "precio": 80,
+        "id": 1,
+        "titulo": "Clases de Surf",
+        "imagen": "./assets/images/EscuelaSurf.jpg"
+    },
+    {
+        "precio": 30,
+        "id": 2,
+        "titulo": "Nado con Snorkel",
+        "imagen": "./assets/images/EscuelaSnorkel.jpg"
+    },
+    {
+        "precio": 50,
+        "id": 3,
+        "titulo": "Alquiler de Buggy",
+        "imagen": "./assets/images/AlquilerBuggy.jpg"
+    },
+    {
+        "precio": 200,
+        "id": 4,
+        "titulo": "Paseo de Helicoptero",
+        "imagen": "./assets/images/HelicopteroCiudad.jpg"
+    },
+    {
+        "precio": 50,
+        "id": 5,
+        "titulo": "Recorrido Playas  ",
+        "imagen": "./assets/images/CanasJure.jpg"
+    },
+    {
+        "precio": 100,
+        "id": 6,
+        "titulo": "Paseo en Yate ",
+        "imagen": "./assets/images/ReccorridoPlayas.jpg"
+    }
+]

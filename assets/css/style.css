@@ -1,0 +1,440 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Merienda:wght@400;700&display=swap');
+
+
+/* Variables */
+:root {
+    --principal: #00204A;
+    --secondary: #fff;
+    --font-primary: 'Titillium Web', sans-serif;
+    --font-secundary: 'Merienda', cursive;
+}
+
+/*  Normalize */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--principal);
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-family: var(--font-secundary);
+    color: var(--principal);
+    font-size: 3em;
+
+}
+
+h3 {
+    font-family: var(--font-secundary);
+    color: var(--principal);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+/* Helpers */
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1095 px;
+    margin: 0 auto
+}
+
+/* Navbar section */
+
+.back {
+    background-image: url(../images/Playahorizontal.jpg);
+    overflow: hidden;
+    height: 100vh;
+    background-size: 100%;
+    background-position: top;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.navbar__menu .navbar__item {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 3s ease;
+}
+
+#borderwhit {
+    color: var(--secondary);
+}
+
+.navbar__item .navbar__link1 {
+    color: var(--secondary);
+}
+
+.navbar__menu .navbar__item:hover {
+    display: block;
+    border-color: inherit;
+}
+
+.navbar__item .submenu {
+    display: none;
+    position: absolute;
+}
+
+.navbar .navbar__menu .navbar__item:hover .submenu {
+    display: block;
+    border-color: inherit;
+}
+
+.submenu .submenu__item .submenu__link1 {
+    padding: .1rem;
+    font-size: 1.4em;
+    color: var(--secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 2s ease;
+}
+
+.submenu .submenu__item .submenu__link1:hover {
+    border-color: inherit;
+
+}
+
+.navbar__item .submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu .submenu__item .submenu__link {
+    padding: .1rem;
+    font-size: 1.4em;
+    color: var(--principal);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: all 2s ease;
+}
+
+.submenu .submenu__item .submenu__link:hover {
+    border-color: inherit;
+
+}
+
+.header1 {
+    background: rgba(243, 247, 248, 0.116);
+}
+
+header .navbar {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header .navbar__brand {
+    flex-basis: 30%
+}
+
+header .navbar__menu {
+    flex-basis: 40%;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar__brand img {
+    height: auto;
+    width: auto;
+}
+
+.tittle {
+    font-family: var(--font-secundary);
+    text-align: center;
+    font-size: 20em;
+    color: var(--secondary);
+    word-spacing: -0.4em;
+}
+
+.tittle__empresa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+
+    .navbar__item .navbar__link {
+        font-size: 90%;
+    }
+
+    .navbar__menu .navbar__item .navbar__link1 {
+        font-size: 90%;
+    }
+
+    .navbar__menu .navbar__item {
+        justify-content: center;
+    }
+}
+
+a:hover {
+    color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+    .tittle__empresa {
+        display: flex;
+        flex-direction: column;
+        font-size: 80%;
+    }
+
+    .back {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar__item .navbar__link1 {
+        font-size: 1.5em;
+    }
+
+    .tittle__empresa {
+        display: flex;
+        flex-direction: column;
+        font-size: 50%;
+    }
+
+}
+
+
+.navbar__brand .navbar__brand--img {
+    animation: rotationLogo 5s ease infinite;
+}
+
+@keyframes rotationLogo {
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+/* Fin Navbar section */
+
+/* Section Sobre */
+
+.sobre {
+    height: 100vh;
+    padding: 4rem;
+}
+
+.sobre__picture {
+    flex-basis: 50%;
+}
+
+.sobre__text {
+
+    flex-basis: 50%;
+    padding: 7rem;
+}
+
+.sobre__text__1 {
+
+    margin: 1rem auto;
+}
+
+.sobre__tittle {
+
+    font-size: 3em;
+}
+
+.sobre__info {
+
+    font-size: 2em;
+    text-align: justify;
+}
+
+/* Formulario */
+
+.body-form {
+
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-form {
+
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px;
+    width: 400px;
+    max-width: 100%;
+
+}
+
+.title-form {
+
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.title-form h2 {
+
+    font-size: 3em;
+
+}
+
+.form {
+    padding: 2rem;
+
+}
+
+.form-control {
+
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+    font-family: var(--font-secundary)
+}
+
+.form-control label {
+
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1.8em;
+}
+
+.form-control input {
+
+    border: 0.2rem solid #f0f0f0;
+    display: block;
+    border-radius: 0.5rem;
+    font-size: 1.4em;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.form-control i {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
+    visibility: hidden;
+    font-size: 1.5em;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    visibility: hidden;
+    font-size: 1em;
+}
+
+.form button {
+
+    background-color: var(--principal);
+    color: var(--secondary);
+    border: 0.2rem solid --principal;
+    font-size: 2em;
+    font-family: var(--font-secundary);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.01em;
+
+}
+
+/* Error and Success */
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+
+}
+
+.btn.btn-primary {
+
+    font-size: 1.5em;
+    font-family: var(--font-secundary);
+    font-size: medium;
+}
+
+/* Carrito */
+
+.table {
+    font-family: var(--font-secundary);
+    font-size: 1.7em;
+}
+
+.borrar-todo {
+    font-size: 0.7em;
+}
+
+#template-card {
+    font-size: var(--font-secundary);
+}
+
+/* Footer */
+
+h6 {
+
+    font-family: var(--font-secundary);
+    font-size: 1.5em;
+}
+
+.footer_info {
+    font-size: 1.3em;
+}
+
+.copyright {
+    font-family: var(--font-secundary);
+}
