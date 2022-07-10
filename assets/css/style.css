@@ -44,7 +44,8 @@ h2 {
     font-family: var(--font-secundary);
     color: var(--principal);
     font-size: 3em;
-
+    margin: 0 auto;
+    text-align: center;
 }
 
 h3 {
@@ -421,6 +422,39 @@ a:hover {
 
 #template-card {
     font-size: var(--font-secundary);
+}
+
+/* Clima */
+
+.clima {
+    font-family: var(--font-secundary);
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contenedor {
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+#caja1,
+#caja2,
+#caja3 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20%;
+    width: 200px;
+    height: 200px;
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    border-radius: 0.5rem;
 }
 
 /* Footer */

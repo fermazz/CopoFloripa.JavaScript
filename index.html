@@ -40,7 +40,7 @@
             <a class="navbar__link1" href="index.html#carrito">SERVICIOS</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link1" href="assets/pages/galeria.html">CONTACTO</a>
+            <a class="navbar__link1" href="index.html#contenedor">CLIMA</a>
           </li>
           <li class="navbar__item">
 
@@ -169,60 +169,87 @@
           </div>
         </div>
       </template>
-      
 
-    <template class="template-carrito" id="template-carrito">
-      <tr>
-        <th scope="row">id</th>
-        <td>Clases de Surf</td>
-        <td>1</td>
-        <td>
-          <button class="btn btn-info btn-sm">
-            +
-          </button>
-          <button class="btn btn-danger btn-sm">
-            -
-          </button>
-        </td>
-        <td>US$ <span>500</span></td>
-      </tr>
+
+      <template class="template-carrito" id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Clases de Surf</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-info btn-sm">
+              +
+            </button>
+            <button class="btn btn-danger btn-sm">
+              -
+            </button>
+          </td>
+          <td>US$ <span>500</span></td>
+        </tr>
+      </template>
+
+      <table class="table">
+        <thead>
+          <tr class="table_tittle">
+            <th scope="col">#</th>
+            <th scope="col">Actividad / Excursión</th>
+            <th scope="col">Horas</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">El carrito está vacío</th>
+            <div id="vacio"></div>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="row" id="cards"></div>
+    </div>
+
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total servicios</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm borrar-todo" id="vaciar-carrito">
+          Borrar todo
+        </button>
+      </td>
+      <td class="font-weight-bold">US$ <span>5000</span></td>
+      <br><br>
     </template>
 
-    <table class="table">
-      <thead>
-        <tr class="table_tittle">
-          <th scope="col">#</th>
-          <th scope="col">Actividad / Excursión</th>
-          <th scope="col">Horas</th>
-          <th scope="col">Acción</th>
-          <th scope="col">Total</th>
-        </tr>
-      </thead>
-      <tbody id="items"></tbody>
-      <tfoot>
-        <tr id="footer">
-          <th scope="row" colspan="5">El carrito está vacío</th>
-          <div id="vacio"></div>
-        </tr>
-      </tfoot>
-    </table>
-    <div class="row" id="cards"></div>
-  </div>
-
-  <template id="template-footer">
-    <th scope="row" colspan="2">Total servicios</th>
-    <td>10</td>
-    <td>
-      <button class="btn btn-danger btn-sm borrar-todo" id="vaciar-carrito">
-        Borrar todo
-      </button>
-    </td>
-    <td class="font-weight-bold">US$ <span>5000</span></td>
-    <br><br>
-  </template>
-  
 
     <!-- Fin sección Carrito -->
+
+    <!-- Comienzo sección clima -->
+
+    <div class="clima flex-column container">
+
+      <div id="contenedor">
+
+        <div id="caja1">
+          <h1 id="temperatura-valor"> </h1>
+          <h1 id="temperatura-descripcion"> </h1>
+        </div>
+
+        <div id="caja2">
+          <h2 id="ubicacion"></h2>
+          <img id="icono-animado" src="" alt="" height="128" width="128">
+        </div>
+
+        <div id="caja3">
+          <h3>Velocidad del Viento</h3>
+          <h1 id="viento-velocidad"></h1>
+        </div>
+
+      </div>
+       
+    </div>
+
+    <!-- Fin sección clima -->
 
   </main>
 
@@ -263,7 +290,7 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
               <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
               <p><i class="fas fa-home mr-3"></i> Av. Las Rendeiras, Forianópolis, SC</p>
-              <p><i class="fas fa-envelope mr-3" ></i> copofloripa@gmail.com</p>
+              <p><i class="fas fa-envelope mr-3"></i> copofloripa@gmail.com</p>
               <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
               <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
             </div>
@@ -292,7 +319,8 @@
 
   <!-- Inicio sección scritps -->
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="clima.js"></script>
   <script src="formulario.js"></script>
   <script src="carrito.js"></script>
   <script src="https://kit.fontawesome.com/116473793d.js" crossorigin="anonymous"></script>
